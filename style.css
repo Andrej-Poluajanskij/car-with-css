@@ -1,0 +1,69 @@
+
+.car-window {
+    width: 120px;
+    height: 75px;
+    background-color: aqua;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+.car-body {
+    width: 220px;
+    height: 95px;
+    background-color: red;
+    position: absolute;
+    bottom: 40px;
+}
+.car-wheel-1 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+.car-wheel-2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
+.car-wheel-1, .car-wheel-2 {
+    animation: wheelDemo 8s forwards ;
+}
+.wheel-center {
+    width: 12px;
+    height: 12px;
+    background-color: yellow;
+    position: absolute;
+    top: 41%;
+    left: 41%;
+}
+.road {
+    height: 100px;
+    background-color: grey;
+}
+.car {
+    position: relative;
+    width: 230px;
+    height: 220px;
+    animation: carDemo 8s forwards;
+   
+
+}
+@keyframes carDemo {
+    0% {margin-left: 1px}
+    50%{margin-left: 600px}
+    100% {margin-left: 1px}
+}
+@keyframes wheelDemo {
+    0% {transform: rotate(0deg)}
+    25% {transform: rotate(45deg)}
+    50% {transform: rotate(90deg)}
+    75% {transform: rotate(45deg)}
+    100% {transform: rotate(0deg)}
+}
